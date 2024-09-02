@@ -13,7 +13,7 @@ void setup() {
   Wire.begin();
   Serial.begin(9600);
     
-  // Wake up the MPU6050 (it starts in sleep mode)
+
   Wire.beginTransmission(MPU6050);
   Wire.write(Power); 
   Wire.write(0);          
